@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power System Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Power System Calculator</h1>
+        <div><label for="generator">Generator Power (MW):</label>
+        <input type="number" id="generator" placeholder="Enter generator power"></div>
+       <div> <label for="load">Load Power (MW):</label>
+        <input type="number" id="load" placeholder="Enter load power"></div>
+      <div> <label for="lineLength">Transmission Line Length (km):</label>
+        <input type="number" id="lineLength" placeholder="Enter line length"></div>
+      <div> <label for="lineResistance">Transmission Line Resistance (ohm/km):</label>
+        <input type="number" id="lineResistance" placeholder="Enter line resistance"></div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
